@@ -1,3 +1,4 @@
+import User from "../../components/User";
 import axios from "axios";
 
 const UserList = ({ userList }) => {
@@ -7,9 +8,7 @@ const UserList = ({ userList }) => {
             {
                 userList.results.map(user => {
                     return(
-                        <div key={user.id}>
-                            Name: {user.name} - Status: {user.status}
-                        </div>
+                        <User key={user.id} user={user}/>
                     );
                 })}
         </div>
