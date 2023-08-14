@@ -1,13 +1,18 @@
-import Link from "next/link";
-const HomePage = () => {
-    return ( 
-        <div>
-        <h1>home page</h1>
-        <Link  href="/posts">
-            got to posts page?
-        </Link>
+import Link from 'next/link';
+import styles from '../styles/Home.module.css';
+
+
+export default function Home() {
+    return (
+        <div className={styles.container}>
+            <h1>Home Page</h1>
+            <Link href="/users">
+                Go to UserList page?
+            </Link>
+            <Link href="/episode">
+                Go to Episode page?
+            </Link>
         </div>
     );
 };
 
-export default HomePage;
