@@ -1,4 +1,4 @@
-const User = (user) => {
+const User = ({user}) => {
     return (
         <div>
             Name: {user.name} - Status: {user.status}
