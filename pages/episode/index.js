@@ -4,7 +4,7 @@ import Link from "next/link";
 const EpisodeList = ({ episodeList }) => {
     return (
         <div>
-            <h1>User list page</h1>
+            <h1>Episode list page</h1>
             {
                 episodeList.results.map((episode) => {
                     return (
